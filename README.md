@@ -20,6 +20,9 @@ used for the Bayesian estimation of DETECT, which will be required for DETECT to
 Warning
 
 Some filenames may have to be changed, such as whenever a reference to the dat or fasta files are made. These filenames will come from 
-external sources and are not generated exactly the same way automatically.
+external sources and are not generated exactly the same way automatically. The path to the EMBOSS package will also have to be changed to 
+one that is available to you. Furthermore, please ensure that you have installed all the necessary packages (those that are imported in 
+the bash script headers). Finally, this pipeline is designed to run off of the Scinet cluster; usage on other clusters will require further
+modifications.
 
 For more information, bug reports, or otherwise, please contact: leon.xu@mail.utoronto.ca
