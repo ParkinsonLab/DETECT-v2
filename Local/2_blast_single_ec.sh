@@ -1,0 +1,2 @@
+#!/bin/bash
+blastp -query $1.fasta -db uniprot_sprot_all_blastdb -outfmt "7 qseqid sseqid ssac qstart qend sstart send evalue bitscore qcovs qcovhsp slen pident" -out $1.bl -evalue 1 -max_target_seqs 100000
