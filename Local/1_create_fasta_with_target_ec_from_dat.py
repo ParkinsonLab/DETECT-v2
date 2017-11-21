@@ -21,7 +21,7 @@ def ec_complete(description):
 	return False
 
 def is_target_ec(description, target_ec):
-	if target_ec in description:
+	if ("EC=" + target_ec + " ") in description or ("EC=" + target_ec + ";") in description:
 		return True
 	return False
 

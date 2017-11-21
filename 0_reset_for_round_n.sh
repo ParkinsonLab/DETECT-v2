@@ -18,14 +18,9 @@ rm processed.txt || true &&
 cat processed.*.txt processed2.txt > processed.txt || true &&
 rm processed2.txt || true &&
 rm processed.*.txt || true &&
-cp scores.txt scores2.txt || true &&
-rm scores.txt || true &&
-cat scores.*.txt scores2.txt > scores.txt || true &&
-rm scores2.txt || true &&
-rm scores.*.txt || true &&
 rm eligible_ecs.*.txt || true &&
 rm master_pipeline.*.sh || true &&
-rm GenerateAIQROScores* || true &&
+rm GenerateIQROScores* || true &&
 rm run_master_pipelines_on_scinet.*.sh || true &&
 python 0_get_eligible_ecs.py $1 &&
 python 0_create_run_pipeline_forall_ec.py $1 &&
