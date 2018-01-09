@@ -6,15 +6,11 @@ The following is for the distributed version for use on Scinet.
 
 Dependencies
 
-EMBOSS
-
-Biopython
-
-NCBI Blast+
+EMBOSS, Biopython, NCBI Blast+
 
 Basic Usage
 
-Simply place this folder into Scinet, place raw dat file of all proteins to process and a fasta file of all proteins that meet your 
+Simply place this folder into Scinet, place raw dat file (i.e. uniprot_sprot.dat) of all proteins to process and a fasta file of all proteins that meet your 
 criteria, generate a blast db based on your list of proteins, and run the bash script "0_reset_for_round_n.sh -n", where -n is the number of 
 individual jobs to split into (currently set to optimally use some multiple of 8). This will start the pipeline, and should result in two 
 files, one for positive and oen for negative densities, per viable EC. 
@@ -31,10 +27,10 @@ If using some batch management system (e.g. qsub, dsub), ensure that the job nee
 
 Preprocessing
 
-0_prepare_sequence_data: Used to filter out proteins which do not belong to a viable class for analysis in DETECT from dat file into fasta 
+0_prepare_sequence_data.py: Used to filter out proteins which do not belong to a viable class for analysis in DETECT from dat file into fasta 
 file.
 
-0_make_blast_db: Used to generate the blast db based on list of proteins from fasta generated from above. 
+0_make_blast_db.sh: Used to generate the blast db based on list of proteins from fasta generated from above. 
 
 Postprocessing
 
