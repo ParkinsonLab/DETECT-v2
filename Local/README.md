@@ -1,7 +1,9 @@
 Dependencies
 
 EMBOSS
+
 Biopython
+
 NCBI Blast+
 
 Basic Usage
