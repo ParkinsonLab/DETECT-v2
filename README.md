@@ -4,6 +4,12 @@ Please see the README in the Local Folder.
 
 The following is for the distributed version for use on Scinet.
 
+Dependencies
+
+EMBOSS
+Biopython
+NCBI Blast+
+
 Basic Usage
 
 Simply place this folder into Scinet, place raw dat file of all proteins to process and a fasta file of all proteins that meet your 

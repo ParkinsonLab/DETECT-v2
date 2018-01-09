@@ -21,7 +21,7 @@ rm processed.*.txt || true &&
 rm eligible_ecs.*.txt || true &&
 rm master_pipeline.*.sh || true &&
 rm run_master_pipelines.*.sh || true &&
-python 0_get_eligible_ecs.py $1 &&
+python 0_get_eligible_ecs.py $1 $2 processed.txt &&
 python 0_create_run_pipeline_forall_ec.py $1 $2 &&
 bash 0_create_and_queue_all_master_pipelines.sh $1 &&
 wait
