@@ -1,3 +1,9 @@
+Dependencies
+
+EMBOSS
+Biopython
+NCBI Blast+
+
 Basic Usage
 
 Simply place this folder into your workspace, place raw dat file of all proteins to process and a fasta file of all proteins that meet your 
