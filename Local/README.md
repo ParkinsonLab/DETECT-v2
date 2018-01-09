@@ -8,7 +8,7 @@ NCBI Blast+
 
 Basic Usage
 
-Simply place this folder into your workspace, place raw dat file of all proteins to process and a fasta file of all proteins that meet your 
+Simply place this folder into your workspace, place raw dat file (named uniprot_sprot.dat) containing all proteins to process and a fasta file of all proteins that meet your 
 criteria, generate a blast db based on your list of proteins, and run the bash script "0_reset_for_round_n.sh -n -x", where -n is the number of 
 individual jobs to split into (currently set to optimally use some multiple of 8), and -x is the fasta filename of your prepared sequences
 (see preprocessing). This will start the pipeline, and should result in two files, one for positive and one for negative densities, per viable EC. 

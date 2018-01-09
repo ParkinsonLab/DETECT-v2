@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# To run: bash 0_reset_for_round_n -partitions -fasta_filename
+# To run: bash 0_reset_for_round_n -partitions -dat_filename
 # Replace -partitions with the number of partitions (should match number of eligible_ec files from 0_get_eligible_ecs)
-# and -fasta_filename with the name of the fasta file with the prepared sequences (output of 0_prepare_sequence_data)
+# and -dat_filename with the name of the original dat file (i.e. uniprot_sprot.dat)
 
 rm *.hits.fasta || true &&
 rm *.query.fasta || true &&
