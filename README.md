@@ -7,7 +7,9 @@ The following is for the distributed version for use on Scinet.
 Dependencies
 
 EMBOSS
+
 Biopython
+
 NCBI Blast+
 
 Basic Usage
