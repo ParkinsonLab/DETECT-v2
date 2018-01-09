@@ -1,10 +1,6 @@
 Dependencies
 
-EMBOSS
-
-Biopython
-
-NCBI Blast+
+EMBOSS, Biopython, NCBI Blast+
 
 Basic Usage
 
@@ -21,10 +17,10 @@ To change the batch size from 8 to some other number, in the script "0_create_an
 
 Preprocessing
 
-0_prepare_sequence_data: Used to filter out proteins which do not belong to a viable class for analysis in DETECT from dat file into fasta 
+0_prepare_sequence_data.py: Used to filter out proteins which do not belong to a viable class for analysis in DETECT from dat file into fasta 
 file.
 
-0_make_blast_db: Used to generate the blast db based on list of proteins from fasta generated from above. 
+0_make_blast_db.sh: Used to generate the blast db based on list of proteins from fasta generated from above. Takes name of result of 0_prepare_sequence_data.py as an argument.
 
 Postprocessing
 

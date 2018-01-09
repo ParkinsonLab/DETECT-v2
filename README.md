@@ -6,11 +6,7 @@ The following is for the distributed version for use on Scinet.
 
 Dependencies
 
-EMBOSS
-
-Biopython
-
-NCBI Blast+
+EMBOSS, Biopython, NCBI Blast+
 
 Basic Usage
 
@@ -31,10 +27,10 @@ If using some batch management system (e.g. qsub, dsub), ensure that the job nee
 
 Preprocessing
 
-0_prepare_sequence_data: Used to filter out proteins which do not belong to a viable class for analysis in DETECT from dat file into fasta 
+0_prepare_sequence_data.py: Used to filter out proteins which do not belong to a viable class for analysis in DETECT from dat file into fasta 
 file.
 
-0_make_blast_db: Used to generate the blast db based on list of proteins from fasta generated from above. 
+0_make_blast_db.sh: Used to generate the blast db based on list of proteins from fasta generated from above. 
 
 Postprocessing
 
