@@ -13,7 +13,7 @@ Configuration
 
 To change the path to your EMBOSS instance, in the script "0_create_run_master_pipelines.py", find the "export=" section in the header variable, and change it to the full directory address of the bin folder of your EMBOSS installation.
 
-To change the batch size from 8 to some other number, in the script "0_create_and_queue_all_master_pipelines.sh", change all instances of the number 8 to some other number. 
+To change the batch size from 8 to some other number, in the script "0_create_and_queue_all_master_pipelines.sh", change all instances of the number 8 to some other number. In the script "0_create_run_master_pipelines.py", change the addend in the declaration of the "end" variable to match that other number.
 
 Preprocessing
 
