@@ -7,6 +7,11 @@ input_counter=1
 for i in `seq 1 $max_batch_num`;
         do
 		python 0_create_run_master_pipelines.py $i $input_counter &&
-		bash run_master_pipelines.$i.sh &&
 		let "input_counter+=8"
-        done   
+        done 
+
+for i in `seq 1 $max_batch_num`;
+        do
+		bash run_master_pipelines.$i.sh &
+		wait
+        done  
