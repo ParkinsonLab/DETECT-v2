@@ -1,7 +1,12 @@
+import os
 import sys
+
+THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
 
 def get_pairs(file_name):
 	pairs = set()
+
+	file_name = os.path.join(THIS_FOLDER, file_name)
 
 	with open(file_name) as f:
 		for line in f:
