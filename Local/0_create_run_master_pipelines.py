@@ -6,7 +6,7 @@ def main():
 	end = int(start) + 8
 
 	with open("run_master_pipelines." + batch_num + ".sh", "w") as master:
-		header = ["#!/bin/bash", "export PATH=$PATH:/Users/leonxu/anaconda/pkgs/emboss-6.6.0-0/bin/\n"]
+		header = ["#!/bin/bash", "export PATH=$PATH:/Users/leonxu/anaconda/pkgs/emboss-6.5.7-2/bin/\n"]
 
 		master.writelines("%s\n" % line for line in header)
 

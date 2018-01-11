@@ -1,10 +1,15 @@
+import os
 import sys
 
 # To run: python 3_get_blast_results_unique_pairs.py -ec
 # Replace -ec with ec of target blast results file to extract pairs from.
 
+THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
+
 def get_pairs(file_name):
 	pairs = set()
+
+	file_name = os.path.join(THIS_FOLDER, file_name)
 
 	with open(file_name) as f:
 		for line in f:
