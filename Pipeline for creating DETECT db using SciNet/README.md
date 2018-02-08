@@ -14,18 +14,23 @@ EMBOSS, Biopython, NCBI Blast+
 *Preprocessing steps*
 
 (a) Place this folder into your workspace on SciNet.
+
 (b) Place raw dat file (named uniprot_sprot.dat) (downloaded typically    
     from SwissProt). 
+	
 (c) Generate a blast database based on your list of proteins.
+
     (i)  Run 0_prepare_sequence_data.py
          This filters out proteins which do not belong to a viable 
          EC class for analysis by DETECT (viable classes have >= 30 
          protein sequences) and prepares a fasta file called 
          uniprot_sprot_prepared.fasta.
+		 
     (ii) Run 0_make_blast_db.sh: Used to generate the blast db based 
          on list of proteins from fasta generated from above. Takes 
          name of output of 0_prepare_sequence_data.py as an argument 
          (uniprot_sprot_prepared.fasta).
+		 
 (d) First, make sure to set up the path to the EMBOSS instance.  
     To change the path to your EMBOSS instance, in the script 
     "0_create_run_master_pipelines.py", find the "export=" section in 
@@ -109,6 +114,7 @@ Please note the following:
              intends to apply the F1-scheme cutoffs introduced in v2.  
 
 =Acknowledgements=
+
 This set of scripts has been tested on the gpc supercomputer at the SciNet HPC 
 Consortium. SciNet is funded by: the Canada Foundation for Innovation under the 
 auspices of Compute Canada; the Government of Ontario; Ontario Research Fund - 
