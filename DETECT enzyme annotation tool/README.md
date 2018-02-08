@@ -1,6 +1,6 @@
 ==Instructions for running DETECTv2==
 
-Please note that the scripts and the databases required for running DETECTv2 can
+Please note that the scripts and the (complete) databases required for running DETECTv2 can
 be downloaded from http://compsysbio.org/projects/DETECTv2/
 
 This folder has a sample script and fasta file that can be used to run DETECT.
