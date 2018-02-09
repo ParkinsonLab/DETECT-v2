@@ -41,17 +41,11 @@ EMBOSS, Biopython, NCBI Blast+
 
 (e) Run the bash script "0_reset_for_round_n.sh -n -x", where -n is 
     the number of individual jobs to split into (currently set to 
-    optimally use some multiple of 8), and -x is the fasta filename of 
+    use a multiple of 8), and -x is the fasta filename of 
     your prepared sequences (following preprocessing steps). 
     This will start the pipeline, and should result in two files, one 
     for positive and one for negative densities, per EC (ECs with 
     >= 30 protein sequences as per uniprot_sprot.dat). 
-
-    To change the batch size from 8 to some other number N, in the 
-    script "0_create_and_queue_all_master_pipelines.sh", change all 
-    instances of the number 8 to N. In the script 
-    "0_create_run_master_pipelines.py", change the addend in the 
-    declaration of the "end" variable to match N.
 
     Please note that, if for some reason, the execution of this step    
     is interrupted, it is possible to resume the execution by 
@@ -62,7 +56,7 @@ EMBOSS, Biopython, NCBI Blast+
 (f) Run 0_create_mappings_and_prior_probabilities_file.py: 
          Requires as argument the name of the fasta file output from 
          0_prepare_sequence_data.py (uniprot_sprot_prepared.fasta).  
-         Create two files containing the mappings of sequence IDs to 
+         Creates two files containing the mappings of sequence IDs to 
          EC (swissProt2EC_ids-30+.mappings), and prior probabilities 
          used for the integrated likelihood score calculation of 
          DETECT (prior_probabilities.out), which will be required for 
