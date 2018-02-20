@@ -9,7 +9,7 @@ required for running DETECTv2.  This GitHub directory only holds the scripts req
 
 (3) (Optional) Test that you can run DETECT.
 
-(a) Navigate to the folder containing DETECTv2 scripts.  You will find a sample script (sample.sh) 
+   (a) Navigate to the folder containing DETECTv2 scripts.  You will find a sample script (sample.sh) 
 and fasta file (sample.fasta) for a quick test. 
 
 (b) Change the value of the variable DETECT_FOLDER (line 1) within sample.sh
