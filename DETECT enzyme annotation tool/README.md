@@ -5,7 +5,7 @@ be downloaded from http://compsysbio.org/projects/DETECTv2/
 
 This folder has a sample script (sample.sh) and fasta file (sample.fasta) that can be used to run DETECT.
 
-Here, we provide details of the arguments that can be changed for running DETECT:
+Here, we provide details of the arguments for running DETECT:
 
     target_file           (string) : Required. Path to the file containing the target FASTA sequence(s)
 	
