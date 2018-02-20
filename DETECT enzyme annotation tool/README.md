@@ -9,26 +9,25 @@ required for running DETECTv2.  This GitHub directory only holds the scripts req
 
 (3) (Optional) Test that you can run DETECT.
 
-   (a) Navigate to the folder containing DETECTv2 scripts.  You will find a sample script (sample.sh) 
-and fasta file (sample.fasta) for a quick test. 
+	(a) Navigate to the folder containing DETECTv2 scripts.  
+	You will find a sample script (sample.sh) and fasta file (sample.fasta) for a quick test. 
 
-(b) Change the value of the variable DETECT_FOLDER (line 1) within sample.sh
-to represent the absolute path to the DETECTv2 folder (containing detect.py and sample.sh).
+	(b) Change the value of the variable DETECT_FOLDER (line 1) within sample.sh to represent the absolute path to the DETECTv2 folder (containing detect.py and sample.sh).
 
-(c) We require that the path to EMBOSS be added to the PATH variable on line 5 of sample.sh.
-We have given in sample.sh a typical directory where EMBOSS may be installed (/usr/local/bin/).  This  
-directory may need to be changed.
+	(c) We require that the path to EMBOSS be added to the PATH variable on line 5 of sample.sh.
+	We have given in sample.sh a typical directory where EMBOSS may be installed (/usr/local/bin/).  
+	This directory may need to be changed.
 
-(d) Change into DETECT_FOLDER.  Run sample.sh.
+	(d) Change into DETECT_FOLDER.  Run sample.sh.
 	
-(e) As is, the following files should be created within DETECT_FOLDER:  sample.top, sample.out, and sample.f1.out.
+	(e) As is, the following files should be created within DETECT_FOLDER:  sample.top, sample.out, and sample.f1.out.
 
 (4) Run DETECT script.
 
-(a) Use sample.sh, and modify as explained in (3)(a), and (b).  Further modifications can be made; please
-look into the following section ("Details of arguments for DETECTv2").
+	(a) Use sample.sh, and modify as explained in (3)(a), and (b).  
+	Further modifications can be made; for more information, look into the following section ("Details of arguments for DETECTv2").
 	
-(b) Change into the folder containing your script.  Run sample.sh.
+	(b) Change into the folder containing your script.  Run sample.sh.
 	
 
 ==Details of arguments for DETECTv2==
