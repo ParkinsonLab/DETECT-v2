@@ -3,7 +3,7 @@
 Please note that the scripts and the (complete) databases required for running DETECTv2 can
 be downloaded from http://compsysbio.org/projects/DETECTv2/
 
-This folder has a sample script (sample.sh) and fasta file (sample.fasta) that can be used to run DETECT from a separate directory.
+This folder has a sample script (sample.sh) and fasta file (sample.fasta) that can be used to run DETECT.
 
 Here, we provide details of the arguments that can be changed for running DETECT:
 
