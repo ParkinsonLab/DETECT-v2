@@ -5,11 +5,11 @@
 
 We first highlight the following dependencies required for running DETECT:
 
-(1) EMBOSS (can be downloaded following the instructions on http://emboss.sourceforge.net/download/)
+(1) BioPython
 
-(2) BioPython
+(2) EMBOSS (http://emboss.sourceforge.net/download/)
 
-(3) NCBI Blast+
+(3) NCBI Blast+ (https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
 
 
 =Instructions=
