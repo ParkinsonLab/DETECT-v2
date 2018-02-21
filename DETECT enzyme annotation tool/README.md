@@ -1,5 +1,8 @@
 ==Instructions for running DETECTv2==
 
+
+=Dependencies=
+
 We first highlight the following dependencies required for running DETECT:
 
 (1) EMBOSS (can be downloaded following the instructions on http://emboss.sourceforge.net/download/)
@@ -7,6 +10,9 @@ We first highlight the following dependencies required for running DETECT:
 (2) BioPython
 
 (3) NCBI Blast+
+
+
+=Instructions=
 
 To run DETECT, please follow the following instructions:
 
@@ -38,7 +44,8 @@ required for running DETECTv2.  This GitHub directory only holds the scripts req
 	(b) Change into the folder containing your script.  Run sample.sh.
 	
 
-==Details of arguments for DETECTv2==
+	
+=Details of arguments for DETECTv2=
 
 Here, we provide details of the arguments for running DETECT:
 
@@ -60,7 +67,8 @@ Here, we provide details of the arguments for running DETECT:
 	
 	beta                  (float)  : Optional. Value of beta in Fbeta: 1 (default), 0.5 or 2. Fbeta is maximized along EC-specific precision-recall curves to derive EC-specific score cutoffs
 
-==Further information==
+	
+=Further information=
 
 The paper for v2 is currently under review; v1 has been published: Hung et al (2010), Bioinformatics vol. 26, no. 14.
 
