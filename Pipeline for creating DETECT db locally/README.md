@@ -7,7 +7,12 @@ For more information, bug reports, or otherwise, please contact: leon.xu@mail.ut
 
 =Dependencies=
 
-EMBOSS, Biopython, NCBI Blast+
+(1) BioPython
+
+(2) EMBOSS (http://emboss.sourceforge.net/download/)
+
+(3) NCBI Blast+ (https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
+
 
 =Usage=
 
