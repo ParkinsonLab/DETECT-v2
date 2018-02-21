@@ -1,6 +1,14 @@
 ==Instructions for running DETECTv2==
 
-To run DETECT, please follow these instructions:
+We first highlight the following dependencies required for running DETECT:
+
+(1) EMBOSS (can be downloaded following the instructions on http://emboss.sourceforge.net/download/)
+
+(2) BioPython
+
+(3) NCBI Blast+
+
+To run DETECT, please follow the following instructions:
 
 (1) Go to http://compsysbio.org/projects/DETECTv2/ to download the scripts and the complete databases
 required for running DETECTv2.  This GitHub directory only holds the scripts required to run DETECT.
