@@ -254,10 +254,6 @@ def calculate_probability (hypothesis, db_connection):
 		
 		if previous_point and next_point:
 			positive = (previous_point[0] + next_point[0])/2
-		elif previous_point:
-			positive = previous_point[0]/2;
-		elif next_point:
-			positive = next_point[0];
 		else:
 			positive = 0
 
@@ -274,10 +270,6 @@ def calculate_probability (hypothesis, db_connection):
 		
 		if previous_point and next_point:
 			negative = (previous_point[0] + next_point[0])/2
-		elif previous_point:
-			negative = previous_point[0]/2;
-		elif next_point:
-			negative = next_point[0];
 		else:
 			negative = 0
 
