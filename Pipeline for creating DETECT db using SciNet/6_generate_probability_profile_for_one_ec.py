@@ -32,20 +32,28 @@ def estimate_density(qec, pairings_filename, density_pos_filename, density_neg_f
 	X_pos_len, X_neg_len = len(X_pos), len(X_neg)
 
 	if X_pos_len > 1:
-		X_min, X_max = min(X_pos), max(X_pos)
-		X_plot = np.linspace(X_min, X_max, 1500)
 		kde = gaussian_kde(X_pos, bw_method='silverman')
+		X_min, X_max = get_endpoints(kde, X_pos)
+		X_plot = np.linspace(X_min, X_max, 1500)
 		dens = kde.evaluate(X_plot)
 		pair_list_and_write_to_file(density_pos_filename, qec, X_plot, dens)
 
 	if X_neg_len > 2:
-		X_min, X_max = min(X_neg), max(X_neg)
-		X_plot = np.linspace(X_min, X_max, 1500)
 		kde = gaussian_kde(X_neg, bw_method='silverman')
+		X_min, X_max = get_endpoints(kde, X_neg)
+		X_plot = np.linspace(X_min, X_max, 1500)
 		dens = kde.evaluate(X_plot)
 		pair_list_and_write_to_file(density_neg_filename, qec, X_plot, dens)
 
 	print("Finished estimating density function for " + qec)
+
+
+def get_endpoints(kde, X):
+
+	X_min, X_max = 0, max(X)
+	while kde.evaluate(X_max) > 10**(-7):
+		X_max += 100
+	return X_min, X_max
 
 def main():
 	serial_num = sys.argv[2]
