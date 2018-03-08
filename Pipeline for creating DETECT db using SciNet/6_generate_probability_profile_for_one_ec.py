@@ -49,7 +49,6 @@ def estimate_density(qec, pairings_filename, density_pos_filename, density_neg_f
 
 
 def get_endpoints(kde, X):
-
 	X_min, X_max = 0, max(X)
 	while kde.evaluate(X_max) > 10**(-7):
 		X_max += 100
