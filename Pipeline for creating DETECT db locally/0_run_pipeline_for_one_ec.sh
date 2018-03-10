@@ -7,12 +7,12 @@ blastp -query $1.fasta -db uniprot_sprot_all_blastdb -outfmt "7 qseqid sseqid ss
 python 3_get_blast_results_unique_pairs.py $1 &&
 python 4_needleall_one_ec.py $1 $2 $3 &&
 cat *.$2.needleall > $1.needleall.final &&
-rm *.$2.query.fasta &&
-rm *.$2.hits.fasta &&
+rm *.$2.query.fasta || true &&
+rm *.$2.hits.fasta || true &&
 rm *.error || true &&
-rm *.$2.needleall &&
+rm *.$2.needleall || true &&
 python 5_format_needleall_one_ec.py $1 $3 &&
 python 6_generate_probability_profile_for_one_ec.py $1 $2 &&
-rm $1.* &&
-rm $1_* &&
+rm $1.* || true &&
+rm $1_* || true &&
 wait
