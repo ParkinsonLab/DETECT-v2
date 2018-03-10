@@ -9,7 +9,7 @@ python 4_needleall_one_ec.py $1 $2 $3 &&
 cat *.$2.needleall > $1.needleall.final &&
 rm *.$2.query.fasta &&
 rm *.$2.hits.fasta &&
-rm *.error &&
+rm *.error || true &&
 rm *.$2.needleall &&
 python 5_format_needleall_one_ec.py $1 $3 &&
 python 6_generate_probability_profile_for_one_ec.py $1 $2 &&
