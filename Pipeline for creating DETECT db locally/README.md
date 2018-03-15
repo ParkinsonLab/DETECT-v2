@@ -82,7 +82,7 @@ For more information, bug reports, or otherwise, please contact: leon.xu@mail.ut
           DETECTv2/data/detect.db
           DETECTv2/data/uniprot_sprot.fsa
           DETECTv2/data/uniprot_sprot.fsa.phr
-          DETECTv2/data/uniprot_sprot.fsa.phr
+          DETECTv2/data/uniprot_sprot.fsa.pin
           DETECTv2/data/uniprot_sprot.fsa.psq
           DETECTv2/density-neg.out
           DETECTv2/density-pos.out
