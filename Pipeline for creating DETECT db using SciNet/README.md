@@ -1,6 +1,10 @@
 ==Pipeline for making the DETECT database on SciNet (or cluster-computing in general)==
 
-The following outlines the steps to create, from SwissProt, the database eventually used for running DETECT (The Density Estimation Tool for Enzyme ClassificaTion); the scripts in this folder are meant to be run on SciNet, but can be modified for cluster-computing more generally.  The paper for v2 is currently under review; v1 has been published: Hung et al (2010), Bioinformatics vol. 26, no. 14.
+The following outlines the steps to create, from SwissProt, the database eventually used for running DETECT (The Density Estimation Tool for Enzyme ClassificaTion); the scripts in this folder are meant to be run on SciNet, but can be modified for cluster-computing more generally.
+
+The paper for v2 is in press: Nursimulu N., Xu L.Y., Wasmuth J.D., Krukov I. and Parkinson J. (2018). Improved enzyme annotation with EC-specific cutoffs using DETECT v2. Bioinformatics. 
+
+v1 has been published as well: Hung et al (2010), Bioinformatics vol. 26, no. 14.
 
 For more information, bug reports, or otherwise, please contact: leon.xu@mail.utoronto.ca
 

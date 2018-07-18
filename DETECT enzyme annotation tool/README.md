@@ -70,6 +70,8 @@ Here, we provide details of the arguments for running DETECT:
 	
 =Further information=
 
-The paper for v2 is currently under review; v1 has been published: Hung et al (2010), Bioinformatics vol. 26, no. 14.
+The paper for v2 is in press: Nursimulu N., Xu L.Y., Wasmuth J.D., Krukov I. and Parkinson J. (2018). Improved enzyme annotation with EC-specific cutoffs using DETECT v2. Bioinformatics. 
+
+v1 has been published as well: Hung et al (2010), Bioinformatics vol. 26, no. 14.
 
 For more information, bug reports, or otherwise, please contact: leon.xu@mail.utoronto.ca
