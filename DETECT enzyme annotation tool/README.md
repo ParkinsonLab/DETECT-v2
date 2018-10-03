@@ -66,7 +66,7 @@ Here, we provide details of the arguments for running DETECT:
 	fbeta_file            (string) : Optional. Path to the file that enumerates predictions that pass EC-specific cutoffs
 	
 	beta                  (float)  : Optional. Value of beta in Fbeta: 1 (default), 0.5 or 2. Fbeta is maximized along EC-specific precision-recall curves to derive EC-specific score cutoffs
-
+	
 	
 =Further information=
 
@@ -75,3 +75,5 @@ The paper for v2 is in press: Nursimulu N., Xu L.Y., Wasmuth J.D., Krukov I. and
 v1 has been published as well: Hung et al (2010), Bioinformatics vol. 26, no. 14.
 
 For more information, bug reports, or otherwise, please contact: leon.xu@mail.utoronto.ca
+
+Please note that the use of the max_target_seqs parameter during BLASTp searches is intentional, and does not affect the results we obtain given the report by Shah et al, 2018 (https://doi.org/10.1093/bioinformatics/bty833).

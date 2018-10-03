@@ -116,6 +116,8 @@ Please note the following:
          (5) ec_to_cutoff.mappings is only required if the user 
              intends to apply the F1-scheme cutoffs introduced in v2.  
 
+Also note that the use of the max_target_seqs parameter during BLASTp searches is intentional, and does not affect the results we obtain given the report by Shah et al, 2018 (https://doi.org/10.1093/bioinformatics/bty833).
+			 
 =Acknowledgements=
 
 This set of scripts has been tested on the gpc supercomputer at the SciNet HPC 
