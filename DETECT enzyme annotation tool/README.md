@@ -65,12 +65,12 @@ Here, we provide details of the arguments for running DETECT:
 	
 	fbeta_file            (string) : Optional. Path to the file that enumerates predictions that pass EC-specific cutoffs
 	
-	beta                  (float)  : Optional. Value of beta in Fbeta: 1 (default), 0.5 or 2. Fbeta is maximized along EC-specific precision-recall curves to derive EC-specific score cutoffs
+	beta                  (float)  : Optional. Value of beta in Fbeta: 1 (default), 0.5 or 2. Fbeta is maximized along EC-specific precision-recall curves to derive EC-specific score cutoffs.  (Further details for each EC is provided in Details_of_EC_specific_cutoffs.xlsx.)
 	
 	
 =Further information=
 
-The paper for v2 is in press: Nursimulu N., Xu L.Y., Wasmuth J.D., Krukov I. and Parkinson J. (2018). Improved enzyme annotation with EC-specific cutoffs using DETECT v2. Bioinformatics. 
+The paper for v2 has been published: Nursimulu N., Xu L.Y., Wasmuth J.D., Krukov I. and Parkinson J. (2018). Improved enzyme annotation with EC-specific cutoffs using DETECT v2. Bioinformatics. 34(19):3393-3395.
 
 v1 has been published as well: Hung et al (2010), Bioinformatics vol. 26, no. 14.
 
